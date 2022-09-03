@@ -1,29 +1,18 @@
 package com.my.test;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestClass {
     public static void main(String[] args) {
-        int numberOfSeats = 200;
-
-        HashMap<Integer, Boolean> seats = new HashMap<>();
-
-        for (int i = 0; i < numberOfSeats; i++) {
-            Random random = new Random();
-            boolean available = random.nextBoolean();
-            seats.put(i, available);
-        }
-    }
-
-    public Integer getAvailableSeat(HashMap<Integer, Boolean> seats) {
-        for (Map.Entry<Integer, Boolean> entry : seats.entrySet()) {
-
-            if (entry.getValue().equals(true)) {
-                return entry.getKey();
+        List<String> list = new ArrayList<>();
+        while (true) {
+            list.add("erger");
+            if (list.size() % 1000 == 0) {
+                System.out.println(list.size());
             }
         }
-        return null;
+
     }
 }
